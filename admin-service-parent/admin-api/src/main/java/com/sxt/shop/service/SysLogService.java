@@ -1,0 +1,16 @@
+package com.sxt.shop.service;
+
+import com.sxt.shop.entity.SysLog;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+/**
+ * <p>
+ * 系统日志 服务类
+ * </p>
+ *
+ * @author WHSXT-LTD
+ * @since 2019-09-20
+ */
+public interface SysLogService extends IService<SysLog> {
+
+}

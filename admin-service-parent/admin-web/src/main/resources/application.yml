@@ -1,0 +1,22 @@
+server:
+  port: 8085
+shiro:
+  redis: 192.168.1.100:6379
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ego-shop?serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 192.168.1.100
+    port: 6379
+    jedis:
+      pool:
+        max-active: 20
+        max-idle: 15
+        min-idle: 10
+mybatis-plus:
+  mapper-locations:
+  - classpath:/mapper/*.xml
+  type-aliases-package: com.sxt.shop.entity
